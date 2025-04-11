@@ -8,4 +8,9 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: path.resolve("src") }],
   },
+  server: {
+    watch: {
+      usePolling: true, // 파일 변경 감지를 polling 방식으로 강제
+    },
+  },
 });
