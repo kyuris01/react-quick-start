@@ -5,19 +5,26 @@
   "type": "module",
   "scripts": {
     "dev": "vite --force",
-    "build": "babel src -d build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@types/node": "^22.13.13",
+    "@types/youtube-player": "^5.5.11",
+    "axios": "^1.9.0",
     "bootstrap": "^5.3.3",
     "date-and-time": "^3.6.0",
     "immer": "^10.1.1",
+    "p-min-delay": "^4.1.0",
     "path": "^0.12.7",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.5.2",
+    "react-router-dom": "^7.5.2",
+    "react-spinners": "^0.17.0",
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.27.0",
@@ -35,6 +42,7 @@
     "globals": "^15.15.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vite-plugin-webpackchunkname": "^1.0.3"
   }
 }
