@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { CallbacksType, TodoItemType } from "../AppContainer";
+import { TodoItemType } from "../redux/TodoReducer";
 
 type PropsType = {
   todoItem: TodoItemType;
